@@ -1,0 +1,30 @@
+# This is the rewards file.
+# Here is a guide for this: https://wiki.ajg0702.us/ajparkour/configs/Rewards
+intervals:
+  '15':
+    message: '&7&bOtrzymałeś &e&l&n5 Mystery Dustów&b za wykonanie 15 skoków!'
+    commands:
+    - dust add {PLAYER} 5
+  '100':
+    message: '&bOtrzymałeś &e&l&n25 Mystery Dust&b za wykonanie 100 skoków!'
+    commands:
+    - dust add {PLAYER} 25
+  '1000':
+    message: '&bOtrzymałeś &e&l&n500 Mystery Dustów&b za wykonanie 1000 skoków!'
+    commands:
+    - dust add {PLAYER} 500
+specials:
+  beat-server-record:
+    message: '&a&lGratulacje!&r&bUdało Ci się osiągnąć najwyższy wynik na serwerze!'
+    commands:
+    - dust add {PLAYER} 500
+  start:
+    message: ''
+    commands: &id001 []
+  end:
+    message: ''
+    commands: *id001
+exceptions:
+  '1':
+    message: '&a&lGratulacje, wykonałeś skok!'
+    first-time-only: true

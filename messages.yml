@@ -1,0 +1,209 @@
+# 
+# 
+# This is the messsages file.
+# You can change any messages that are in this file
+# 
+# If you want to reset a message back to the default,
+# delete the entire line the message is on and restart the server.
+# 	
+# 	
+prefix: '&6&lParkour &8» '
+alreadyin: '&cJesteś już w parkour!'
+start:
+  score: '&aRozpocząłem parkour! &7Spróbuj pobić swój najlepszy wynik &b{SCORE} skoków&7!'
+  first: '&aRozpoczęto parkour!'
+  no-area-player: '&cNie można znaleźć żadnej areny ani gracza o nazwie ''{INPUT}''!'
+  unknown-player: '&cNie można znaleźć tego gracza!'
+  unknown-area: '&cNie można znaleźć tego obszaru!'
+  started-other: '&aRozpoczął parkour dla {PLY}!'
+  started-other-area: '&aRozpoczął parkour dla &l&f{PLY}&r&a na arenie &l&f{AREA}&r&a!'
+noperm: '&cNie masz do tego permisji!'
+score: '&5&lWynik: &d&l{SCORE}'
+beatrecord: '&aGratulacje!&7 Pobiłeś swój poprzedni wynik &f{SCORE}&7!'
+beatrecord-ingame: '&aGratulacje! &7Właśnie pobiłeś swój poprzedni rekord! Chcesz
+  kontynuować leć dalej!'
+disabledworld: '&cNie możesz zacząć parkour z tego świata!'
+block:
+  potion: '&cNie!'
+  place: '&cNie!'
+  break: '&cNie!'
+numberformatexception: '&cTo nie jest poprawna liczba!'
+areafull: '&cNie można uruchomić parkour, ponieważ teren jest pełny! &7Spróbuj ponownie
+  później.'
+must-be-ingame: '&cAby to zrobić, musisz być w grze!'
+not-in-game: '&cMusisz wykonać to polecenie z konsoli!'
+couldnt-find-player: '&cNie można znaleźć gracza {PLAYER}'
+list:
+  header: '&9Gracze przechodzący parkour:'
+  format: '&{NAME} &7- &e{SCORE} skoków'
+  none: '&7Nic'
+nobodys-played-yet: '&cNikt jeszcze nie przechodziła parkoura!'
+first-position: '&ePierwsza pozycja ustawiona!'
+second-position: '&eDruga pozycja ustawiona!'
+setup-done: '&aMożesz teraz zrobić &2/ajParjour start&a, aby zrobić parkour!'
+reload:
+  usage: '&cPoprawnie użycie: /{CMD} reload <file>&7 Files: {POSS}'
+fallpos:
+  set: '&aUstawiona pozycja upadku!'
+  removed: '&aUsunięto pozycję upadku!'
+top:
+  header: '&9Topka Wyników:'
+  header-area: '&9Najlepsze wyniki na {AREA}:'
+  format: '&a{#}. &6{NAME} &e{SCORE} skoków'
+fall:
+  normal: '&cTy czujesz! &7Twój wynik to &r{SCORE}'
+  force:
+    base: '&cTwoja gra parkour została zakończona, ponieważ '
+    reasons:
+      teleport: you teleported
+    afk: you went AFK.
+errors:
+  blocknotair:
+    base: '&c&lWystąpił błąd:&r&c Blok nie jest powietrzem!'
+    player: '&6Powiadom administratora i spróbuj ponownie później.'
+    admin: '&6Upewnij się, że obszar parkour jest całkowicie powietrzny, a wtyczka
+      ma został poprawnie skonfigurowany przez czytanie /{CMD} organizacji.'
+  notsetup:
+    base: '&cajParkour nie została jeszcze założona.'
+    player: '&6Poproś administratora o skonfigurowanie!'
+    admin: '&6Aby uzyskać informacje o tym, jak to skonfigurować, wykonaj /{CMD} to'
+  too-many-players: '&cW tej chwili jest zbyt wielu graczy w parkour. Spróbuj ponownie
+    później'
+migrate:
+  more-args: '&cPodaj źródło, z którego chcesz przeprowadzić migrację!'
+  success: '&aPrzeniesiony {COUNT} wynik!'
+  error: '&cCoś poszło nie tak. Prawdopodobnie w konsoli jest więcej informacji.'
+placeholders:
+  stats:
+    no-data: '---'
+    time-format: '{m}m {s}s'
+  current:
+    no-data: '0'
+max-score-reached: '&cOsiągnąłeś maksymalny wynik! Twoja gra została zakończona.'
+console-warn-confirm: |-
+  &cJeśli wykonasz to polecenie, będziesz mógł ustawić je ponownie tylko w grze!
+  &7Aby mimo to uruchomić polecenie, uruchom to polecenie: &f{COMMAND} confirm
+commands:
+  help:
+    header: '&aajParkour zrobiony przez &2dawidox1238yt&a!'
+    start: '&6 /{CMD} start &7- &9Rozpocznij parkour!'
+    startarea: '&6 /{CMD} start <area> &7- &9Rozpocznij parkour w określonym obszarze.'
+    startothers: '&6 /{CMD} start <player> [area] &7- &9Rozpocznij parkour innego
+      gracza w określonym obszarze.'
+    top: '&6 /{CMD} top &7- &9Zobacz 10 najlepszych graczy!'
+    list: '&6 /{CMD} list &7- &9Zobacz wszystkich, którzy grają w parkour i ich wyniki.'
+    setup: '&6 /{CMD} setup &7- &9Polecenia konfiguracji wtyczki. &7(rekomendowane
+      permssion: ajparkour.setup)'
+    portals: '&6 /{CMD} portals &7- &9Polecenia zakładania portali.'
+    areas: '&6 /{CMD} areas &7- &9Wymień wszystkie załadowane obszary'
+  setup:
+    header: '&aajParkour&2 polecenia konfiguracji'
+    create: '&6 /{CMD} setup create &7- &9Utwórz obszar'
+    pos1: '&6 /{CMD} setup pos1 &7- &9Ustaw pierwszą pozycję'
+    pos2: '&6 /{CMD} setup pos2 &7- &9Ustaw drugą pozycję'
+    we: '&6 /{CMD} setup we &7- &9Wybierz pierwszą i drugą pozycję za pomocą worldedit'
+    fallpos: '&6 /{CMD} setup fallpos &7- &9Ustaw pozycję upadku!'
+    edit: '&6 /{CMD} edit &7- &9Załaduj istniejący obszar do kolejki edycji.'
+    info: '&6 /{CMD} setup info &7- &9Pokaż, jakie punkty ustaliłeś do tej pory!'
+    diff: '&6 /{CMD} setup difficulty &7- &9Ustaw poziom trudności obszaru!'
+    max: '&6 /{CMD} setup max &7- &9Ustaw maksymalną liczbę osób, które mogą przebywać
+      n arenie!'
+    save: '&6 /{CMD} setup save &7- &9Zapisuje i włącza obszar. (Powinno to być zrobione
+      na końcu)'
+  portals:
+    header: '&aajParkour&2 polecenia portalu'
+    list: '&6 /{CMD} portals list &7- &9Wyświetla wszystkie portale.'
+    create: '&6 /{CMD} portals create &7- &9Utwórz portal.'
+    remove: '&6 /{CMD} portals remove &7- &9Usuń portal.'
+  listareas:
+    header: '&9Załadowane obszary parkour:'
+    format: '&7 - &a{NAME} &7Poziom Trudności: &9{DIFFICULTY}'
+    none: '&7Brak załadowanych obszarów!'
+  not-on-whitelist: '&cNie możesz użyć tego polecenia na parkour!'
+not-from-console: '&cNie możesz uruchomić tego polecenia z konsoli!'
+setup:
+  no-name: '&cMusisz nazwać swój obszar!'
+  edit:
+    no-name: '&cPodaj nazwę obszaru do edycji!'
+    loaded: '&aObszar załadowany do edycji! Zresetuj pozycje za pomocą /{CMD} setup'
+    no-area: '&cObszar o tej nazwie nie istnieje!'
+  need-to-create: '&aMusisz utworzyć obszar przed edycją!'
+  we:
+    not-installed: '&cAby użyć tego polecenia, musisz mieć zainstalowany WorldEdit!&7
+      Spróbuj użyć wbudowanych poleceń konfiguracyjnych pos1 i pos2.'
+    incomplete-selection: '&cZanim to zrobisz, musisz dokonać pełnego wyboru edycji
+      świata!'
+  created: '&aObszar utworzony i dodany do kolejki edycji. See &2/ajParkour setup&a
+    lub przejrzyj stronę wtyczki, aby dowiedzieć się, jak ją skonfigurować!'
+  already-creating: '&cObecnie powstaje arena. &aZapisz tę arenę lub uruchom to polecenie
+    ponownie, aby je zastąpić. (&c&lNOTE:&r&c Zastąpienie spowoduje usunięcie wszystkich
+    danych z areny, która była wcześniej konfigurowana!)'
+  info:
+    header: '&6Kolory: &aUstawione &7Nieustawione (opcjonalne) &cNieustawione (wymagane)'
+  set:
+    pos1: '&aPierwsza pozycja ustawiona!'
+    pos2: '&aUstawiono drugą pozycję!'
+    fallpos: '&aUstawiona pozycja upadku!'
+    we: '&aPozycje ustawione!'
+    diff: '&aZestaw trudności!'
+    max: '&aMaksymalny zestaw graczy!'
+  max:
+    need-args: '&cProszę wpisać numer!'
+  diff:
+    not-valid: '&cNieprawidłowy poziom trudności! &7 Prawidłowe poziomy trudności
+      to: &łatwy&7,&fśredni&7,&ftrudny&7, &fekspert &7 oraz zrównoważony'
+    need-args: |-
+      &cPodaj poziom trudności! &7Prawidłowe trudności to: &fasy&7, &fmedium&7, &fhard&7, &fexpert&7 oraz &fbalanced&7.
+      &aZrównoważony poziom trudności sprawi, że parkour stanie się trudniejszy, gdy gracz uzyska wyższe wyniki.
+  save:
+    not-done: '&cNie ustawiłeś wszystkich wymaganych ustawień! &7Zobacz &f/{CMD} setup
+      info&7 żeby zobaczyć co ci zostało.'
+    success: '&aArena {NAME} zapisane i załadowane!'
+  area:
+    too-small: |-
+      &cObszar, który właśnie utworzyłeś, nie spełnia minimalnego zalecanego rozmiaru 20x20x20!
+      &7Możesz kontynuować tworzenie obszaru, ale wiedz, że możesz napotkać problemy z graczami wpadającymi na siebie i prawdopodobnie parkour wychodzący poza obszar!
+      &7Twoja arena: {l}x{w}x{h} (XxZxY)
+portals:
+  list:
+    header: '&2Portale Parkour'
+    format:
+      area: '&2{NAME} &7- &a{COORDS} &7- &a{AREA}'
+      no-area: '&2{NAME} &7- &a{COORDS}'
+  create:
+    help: '&cPoprawne użycie: /{CMD} portals create <name> [area]'
+    success: '&aUtworzono portal o nazwie ''{NAME}'' w Twojej obecnej lokalizacji!
+      &7Ty musisz konieczne ponowne uruchomić serwer, aby portal zaczął działać.'
+  remove:
+    help: '&cPodaj nazwę portalu do usunięcia!'
+    cannot-find: '&cNie można znaleźć portalu o tej nazwie! Upewnij się, że to przeliterowałeś
+      poprawnie i że nakładasz te same czapki.'
+    success: '&aUsunięto portal ''{NAME}''!'
+    no-portals: '&cNie utworzono jeszcze portali! Utwórz portale przed ich usunięciem'
+gui:
+  selector:
+    title: Selektor bloków...
+    items:
+      random:
+        title: '&rLosowe bloki'
+        lore: '&7Wybierze losowy blok.'
+      selected:
+        lore: '&aAktualnie wybrane'
+      nextpage:
+        name: '&a&lNastępna strona'
+      prevpage:
+        name: '&a&lPoprzednia strona'
+items:
+  blockselector:
+    name: '&aSelektor bloków...'
+reset:
+  usage: '&cPoprawne użycie: /{CMD} reset <player>'
+  success: '&aZresetuj wynik {PLAYER} na 0'
+blockselector:
+  openedfor: '&aOtwarty selektor bloku dla {PLAYER}'
+areas:
+  remove:
+    help: '&cPodaj nazwę obszaru do usunięcia!'
+    cannot-find: '&cNie można znaleźć obszaru o tej nazwie! Upewnij się, że poprawnie
+      je przeliterowałeś, i że nakładasz te same czapki.'
+    success: '&aUsunięto arene ''{NAME}''!'
